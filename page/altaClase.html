@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesGrid.css">
+    <script src="https://kit.fontawesome.com/6e1bb179ca.js" crossorigin="anonymous"></script>
+    <title>ALTA CLASE</title>
+</head>
+
+<body>
+    <div class="gridContainerPaginas" id="principal">
+        <header>
+            <nav>
+                <ul class="lista">
+                    <li> <a href="../index.html">Inicio</a></li>
+                    <li><a href="./wod.html">Wod del dia</a></li>
+                    <li><a href="./AltaAtleta.html">Alta Atleta</a></li>
+                    <li> <a href="#">Alta Clase</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a class="SinBorde" href="./consultaClase.html">Consulta turno</a></li>
+                </ul>
+            </nav>
+    </div>
+    </header>
+    <section>
+        <div class="container__cabecera__alta">
+            <h1 class="h1__producto">ELEGI EL HORARIO MAS CONVENIENTE A TUS NECESIDADES</h1>
+        </div>
+    </section>
+
+    <main>
+        <section class="container">
+            <h1>ALTA CLASE</h1>
+            <form action="" class="container__form">
+                <div class="contenedorForm">
+                    <label class="container__form__text" for="text">Ingrese DNI</label>
+                    <input class="container__input__carga" type="text" name="dni" id="0" placeholder="DNI Atleta">
+                </div>
+                <div class="contenedorForm">
+                    <label class="container__form__text" for="text">Ingrese fecha Clase</label>
+                    <input class="container__input__carga" type="date" name="Alta Clase" id="2" placeholder="Fecha nacimiento">
+                </div>
+
+                <div class="contenedorForm">
+                    <label class="container__form__text" for="horario">Indique turno</label>
+                    <select class="container__input__carga" name="hora" id="horario">
+                    <option value="09:00"selected >09:00</option>
+                    <option value="10:00" >10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>                
+                </select>
+                </div>
+                <div class="contenedorForm">
+                    <label class="container__form__text" for="cat">Indique categoria</label>
+                    <select class="container__input__carga" name="hora" id="horario">
+                    <option value="scaled"selected >scaled</option>
+                    <option value="Avanzado" >Avanzado</option>
+                    <option value="Libre">Libre</option>
+                
+                </select>
+
+                </div>
+
+                <div class="botones ">
+                    <span class="container__button ">                      
+                        <input  class="container__input " type="submit" value="ALTA CLASE">
+                    </span>
+                    <span class="container__button ">                     
+                        <input  class="container__input " type="reset" value="NUEVA CARGA">
+                    </span>
+                </div>
+
+            </form>
+
+        </section>
+
+        <section>
+            <div class="irHeader ">
+                <a href="#principal "><img src="../images/subir.png " alt="subir " /></a>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <h3>Atlon Crossfit © 2022 All Rights Reserved</h3>
+                </li>
+                <li>
+                    <a class="fa-solid fa-address-card contacto" href="./contacto.html"> Contacto</a></li>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
