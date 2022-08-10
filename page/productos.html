@@ -2,82 +2,131 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/stylesGrid.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesBoostraps.css">
     <script src="https://kit.fontawesome.com/6e1bb179ca.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/imagen_hover/imagehover.min.css">
+    <title>Atlon Crossfit</title>
 </head>
 
+
 <body>
-    <div class="gridContainerPaginas" id="principal">
-        <header>
-            <nav>
-                <ul class="lista">
-                    <li> <a href="../index.html">Inicio</a></li>
-                    <li><a href="./wod.html">Wod del dia</a></li>
-                    <li><a href="./AltaAtleta.html">Alta Atleta</a></li>
-                    <li> <a href="./AltaClase.html">Alta Clase</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a class="SinBorde" href="./consultaClase.html">Consulta turno</a></li>
-                </ul>
+    <header class="container-fluid" id="principal">
+        <section class="d-flex justify-content-center">
+            <nav class="navPropio navbar navbar-expand-xl navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center">
+                <div class="container-fluid">
+                    <div class="girar">
+                        <img class="navbar-brand imgRedonda" src="../images/atlon1.jpg" alt="Logo">
+                    </div>
+                    <a class="navbar-brand anclaSola" href="../index.html">index</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse show" id="navbarDark">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./wod.html">Wod del Dia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Alta Clase</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./altaAtleta.html">Alta Atleta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./consultaClase.html">Consulta Clase</a>
+                            </li>
+                        </ul>
+                    </div>
             </nav>
-        </header>
-
-        <section>
-            <div class="container__cabecera__productos ">
-                <h1 class="h1__producto">Consulta Nuestros Productos de Entrenamientos</h1>
-            </div>
         </section>
-        <main>
+    </header>
+    <section>
+        <div class="container__cabecera__productos ">
+            <h1 class="h1__producto">Consulta Nuestros Productos de Entrenamientos</h1>
+        </div>
+    </section>
+    <main class="container-fluid">
+
+        <div class="contenedor ">
             <section>
-                <div class="container">
-                    <ul class="container__ul_productos">
-                        <li class="container__li container__li__productos">
-                            <p class="container__p__producto">Calleras Grip <br>1500$ </p>
-                            <img src="../images/calleras.png" alt="calleras" width="500">
-                        </li>
-                        <li class="container__li container__li__productos">
-                            <p class="container__p__producto">Soga RPM <br>400$ </p>
-                            <img src="../images/sogas.png" alt="soga" width="500">
-                        </li>
-                        <li class="container__li container__li__productos">
-                            <p class="container__p__producto">dumbell 15kg <br>15000$ </p>
-                            <img src="../images/dumbell.png" alt="calleras" width="500">
-                        </li>
-                        <li class="container__li container__li__productos">
-                            <p class="container__p__producto">Cinto levantamiento <br>4000$ </p>
-                            <img src="../images/cinto.png" alt="calleras" width="500">
-                        </li>
-                        <li class="container__li container__li__productos">
-                            <p class="container__p__producto">Muñequeras<br>2500$ </p>
-                            <img src="../images/muñequeras.png" alt="calleras" width="500">
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-
-        <section>
-            <div class="irHeader">
-                <a href="#principal "><img src="../images/subir.png " alt="subir " /></a>
-            </div>
-        </section>
-        <footer>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Atlon Crossfit © 2022 All Rights Reserved</h3>
+                <ul class="container__ul_productos ">
+                    <li class="container__li container__li__productos ">
+                        <p class="container__p__producto ">Calleras Grip <br>1500$ </p>
+                        <img src="../images/calleras.png " alt="calleras " width="500 ">
                     </li>
-                    <li>
-                        <a class="fa-solid fa-address-card contacto" href="./contacto.html"> Contacto</a></li>
+                    <li class="container__li container__li__productos ">
+                        <p class="container__p__producto ">Soga RPM <br>400$ </p>
+                        <img src="../images/sogas.png " alt="soga " width="500 ">
+                    </li>
+                    <li class="container__li container__li__productos ">
+                        <p class="container__p__producto ">dumbell 15kg <br>15000$ </p>
+                        <img src="../images/dumbell.png " alt="calleras " width="500 ">
+                    </li>
+                    <li class="container__li container__li__productos ">
+                        <p class="container__p__producto ">Cinto levantamiento <br>4000$ </p>
+                        <img src="../images/cinto.png " alt="calleras " width="500 ">
+                    </li>
+                    <li class="container__li container__li__productos ">
+                        <p class="container__p__producto ">Muñequeras<br>2500$ </p>
+                        <img src="../images/muñequeras.png " alt="calleras " width="500 ">
                     </li>
                 </ul>
-            </div>
-        </footer>
-    </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <section>
+        <div class="irHeader ">
+            <a href="#principal "><img src="../images/subir.png " alt="subir " /></a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-center text-white ">
+
+        <div class="container p-4 pb-0 ">
+            <!-- Section: Social media -->
+            <section class="mb-4 ">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-facebook-f "></i></a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-twitter "></i></a>
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-google "></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-instagram "></i></a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-linkedin-in "></i></a>
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-github "></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+            © Atlon Crossfit © 2022 All Rights Reserved:
+            <a class="text-white " href="https://mdbootstrap.com/ ">CESAR PETIT</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+
 </body>
 
 </html>

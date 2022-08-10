@@ -2,46 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/stylesGrid.css">
-    <script src="https://kit.fontawesome.com/6eSZE51bb179ca.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesBoostraps.css">
+    <script src="https://kit.fontawesome.com/6e1bb179ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/imagen_hover/imagehover.min.css">
+    <title>Atlon Crossfit</title>
 </head>
 
 
 <body>
-    <div class="gridContainerPaginas" id="principal">
-        <header>
-            <nav>
-                <ul class="lista">
-                    <li> <a href="../index.html">Inicio</a></li>
-                    <li><a href="./wod.html">Wod del dia</a></li>
-                    <li><a href="./AltaAtleta.html">Alta Atleta</a></li>
-                    <li> <a href="./AltaClase.html">Alta Clase</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a class="SinBorde" href="#">Consulta turno</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <div class="container__cabecera__atleta ">
-                <h1 class="h1__producto">NUESTROS TURNOS DISPONIBLES</h1>
-            </div>
-        </section>
-        <main>
-            <section class="container">
-                <form action="" class="container__form ">
-                    <div class="cargaConsulta">
-                        <label class="container__form__text" for="text">Ingrese fecha Clase</label>
-                        <input class="container__input__carga" type="date" name="Alta Clase" id="2" placeholder="Fecha nacimiento">
+    <header class="container-fluid" id="principal">
+        <section class="d-flex justify-content-center">
+            <nav class="navPropio navbar navbar-expand-xl navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center">
+                <div class="container-fluid">
+                    <div class="girar">
+                        <img class="navbar-brand imgRedonda" src="../images/atlon1.jpg" alt="Logo">
                     </div>
-                </form>
-                <div class="tabla">
+                    <a class="navbar-brand anclaSola" href="../index.html">index</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse show" id="navbarDark">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./wod.html">Wod del Dia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Alta Clase</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./altaAtleta.html">Alta Atleta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./consultaClase.html">Consulta Clase</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </section>
+    </header>
+    <section>
+        <div class="container__cabecera__atleta">
+            <h1 class="h1__producto">NUESTROS TURNOS DISPONIBLES</h1>
+        </div>
+    </section>
+    <main>
+        <div class="contenedor">
+            <section class="d-flex flex-column justify-content-center align-items-center align-content-center">
+                <form class="container__form">
+                    <div class="mb-3 ">
+                        <label class="form-label ">Seleccione Fecha</label >
+                        <input type="date" class="form-control " aria-describedby="fechaHelp " placeholder="Documento ">
+                        <div id="fechaHelp " class="form-text ">Elija una fecha</div>
+                    </div>
+                </form>           
+          
+                 <span class="tabla">
                     <div class="containerTabla">
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p class="titulo">CATEGORIA</p>
                             </div>
@@ -59,7 +87,7 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>SCALED</p>
                             </div>
@@ -76,7 +104,7 @@
                                 <p>30</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>ADVANCED</p>
                             </div>
@@ -93,7 +121,7 @@
                                 <p>30</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>SCALED</p>
                             </div>
@@ -110,7 +138,7 @@
                                 <p>30</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>ADVANCED</p>
                             </div>
@@ -127,7 +155,7 @@
                                 <p>30</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>ADVANCED</p>
                             </div>
@@ -144,7 +172,7 @@
                                 <p>30</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>SCALED</p>
                             </div>
@@ -161,7 +189,7 @@
                                 <p>30</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>ADVANCED</p>
                             </div>
@@ -178,7 +206,7 @@
                                 <p>30</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>SCALED</p>
                             </div>
@@ -195,7 +223,7 @@
                                 <p>30</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>ADVANCED</p>
                             </div>
@@ -212,7 +240,7 @@
                                 <p>30</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="rowTabla">
                             <div class="primera">
                                 <p>ADVANCED</p>
                             </div>
@@ -230,31 +258,48 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </section>
-            <section>
-                <div class=" irHeader irHeaderConsulta">
-                    <a href="#principal "><img src="../images/subir.png " alt="subir " /></a>
-                </div>
-            </section>
-
-
-
-        </main>
-        <footer>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Atlon Crossfit © 2022 All Rights Reserved</h3>
-                    </li>
-                    <li>
-                        <a class="fa-solid fa-address-card contacto" href="./contacto.html"> Contacto</a></li>
-                    </li>
-                </ul>
+                </span>
+            </section>       
+        </div>
+        
+        <section>
+            <div class=" irHeader irHeaderConsulta">
+                <a href="#principal "><img src="../images/subir.png " alt="subir " /></a>
             </div>
-        </footer>
-    </div>
+        </section>
+
+
+
+    </main>
+    <footer class="bg-dark text-center text-white ">
+        <div class="container p-4 pb-0 ">
+            <!-- Section: Social media -->
+            <section class="mb-4 ">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-facebook-f "></i></a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-twitter "></i></a>
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-google "></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-instagram "></i></a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-linkedin-in "></i></a>
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-github "></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+            © Atlon Crossfit © 2022 All Rights Reserved:
+            <a class="text-white " href="https://mdbootstrap.com/ ">CESAR PETIT</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 </body>
 
 </html>

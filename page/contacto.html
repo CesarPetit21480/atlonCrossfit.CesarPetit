@@ -2,93 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/stylesGrid.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesBoostraps.css">
     <script src="https://kit.fontawesome.com/6e1bb179ca.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/imagen_hover/imagehover.min.css">
+    <title>Atlon Crossfit</title>
 </head>
 
 <body>
-    <div class="gridContainerPaginas" id="principal">
-        <header>
-            <nav>
-                <ul class="lista">
-                    <li> <a href="..//index.html">Inicio</a></li>
-                    <li><a href="./wod.html">Wod del dia</a></li>
-                    <li><a href="./AltaAtleta.html">Alta Atleta</a></li>
-                    <li> <a href="./AltaClase.html">Alta Clase</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a class="SinBorde" href="./consultaClase.html">Consulta turno</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section>
-            <div class="container__cabecera__atleta ">
-                <h1 class="h1__producto">CONSULTANOS</h1>
-            </div>
-        </section>
-        <main>
-            <section class="container">
-                <div class="gridContacto">
-                    <div class="container__gridContacto__imagen">
-
+    <header class="container-fluid" id="principal">
+        <section class="d-flex justify-content-center">
+            <nav class="navPropio navbar navbar-expand-xl navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center">
+                <div class="container-fluid">
+                    <div class="girar">
+                        <img class="navbar-brand imgRedonda" src="../images/atlon1.jpg" alt="Logo">
                     </div>
+                    <a class="navbar-brand anclaSola" href="../index.html">index</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse show" id="navbarDark">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./wod.html">Wod del Dia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./altaClase.html">Alta Clase</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./altaAtleta.html">Alta Atleta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./consultaClase.html">Consulta Clase</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </section>
+    </header>
+    <section>
+        <div class="container__cabecera__atleta ">
+            <h1 class="h1__producto">CONSULTANOS</h1>
+        </div>
+    </section>
+    <main>
+        <div class="contenedor">
+            <div class="row">
+                <div class="col-lg-6 container__gridContacto__imagen"></div>
+                <div class="col-lg-6">
+                    <section class=" d-flex justify-content-center">
+                        <form class=" container__form">
+                            <div class="mb-3 ">
+                                <label class="form-label ">Ingrese Nombre</label >
+                                <input type="text " class="form-control " aria-describedby="nombreHelp" placeholder="Nombre Atleta ">
+                                <div id="nombreHelp " class="form-text colorHelp ">Cargue su Nombre Completo</div>
+                            </div>
+                            <div class="mb-3 ">
+                                <label class="form-label ">Ingrese Apellido</label>
+                                <input type="text " class="form-control " aria-describedby="DniHelp ">
+                                <div id="DniHelp " class="form-text colorHelp">Cargue correctamente su Apellido</div>
+                            </div>
+                            <div class="mb-3 ">
+                                <label class="form-label ">Ingrese Email</label>
+                                <input type="email" class="form-control " aria-describedby="emailHelp ">
+                                <div id="emailHelp" class="form-text colorHelp ">Cargue correctamente su Email</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Imgrese Comentario</label>
+                                <textarea class="form-control" rows="5" aria-describedby="comentarioHelp"></textarea>
+                                <div id="comentarioHelp" class="form-text colorHelp">Diganos su inquietud y responderemos a la brevedad</div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <button class="btn btn-primary mb-3 me-3 flex-fill container__input" type="submit" name="Alta">Enviar</button>
+                                <button class="btn btn-primary mb-3 flex-fill container__input" type="reset" name="nuevo">Nueva Solicitud</button>
+                            </div>
 
-                    <form action="" class="container__form__contactos">
-                        <h1>contactos</h1>
-                        <div class="contenedorFormContacto">
-                            <label for="text">Nombre</label>
-                            <input class="container__input__carga_contacto" type="text" name="Nombre" id="0" required placeholder="Nombre">
-                        </div>
-                        <div class="contenedorFormContacto">
-                            <label for="text">Apellido</label>
-                            <input class="container__input__carga_contacto" type="text" name="Apellido" id="1" required placeholder="Apellido">
-                        </div>
-                        <div class="contenedorFormContacto">
-                            <label for="text">e-mail</label>
-                            <input class="container__input__carga_contacto" type="text" name="mail" id="2" placeholder="e-mail">
-                        </div>
-                        <div class="contenedorFormContacto">
-                            <label for="text">Ingrese su consulta</label>
-                            <textarea class="container__input__carga_contacto" name="comentario" id="comentario" cols="30" rows="6" placeholder="Ingrese un Comentario"></textarea>
-                        </div>
-
-                        <div class="botones">
-                            <span class="container__button_contactos">                      
-                        <input  class="container__input " type="submit" value="Enviar">
-                    </span>
-                            <span class="container__button_contactos ">                     
-                        <input  class="container__input " type="reset" value="Limpio Formulario">
-                    </span>
-                        </div>
-                    </form>
+                        </form>
+                    </section>
                 </div>
-            </section>
-
-
-            <section>
-                <div class="irHeader ">
-                    <a href="#principal "><img src="../images/subir.png " alt="subir " /></a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Atlon Crossfit © 2022 All Rights Reserved</h3>
-                    </li>
-                    <li>
-                        <a class="fa-solid fa-address-card contacto" href="./contacto.html"> Contacto</a></li>
-                    </li>
-                </ul>
             </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-center text-white ">
+
+        <div class="container p-4 pb-0 ">
+            <!-- Section: Social media -->
+            <section class="mb-4 ">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-facebook-f "></i></a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-twitter "></i></a>
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-google "></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-instagram "></i></a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-linkedin-in "></i></a>
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-github "></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+            © Atlon Crossfit © 2022 All Rights Reserved:
+            <a class="text-white " href="https://mdbootstrap.com/ ">CESAR PETIT</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
 </body>
 
 </html>
