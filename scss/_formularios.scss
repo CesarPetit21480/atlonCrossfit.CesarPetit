@@ -1,0 +1,60 @@
+    /* estilos formularios */
+    
+    .container__form__textArea_text {
+        position: relative;
+        top: 3rem;
+        left: 8rem;
+    }
+    
+    .container__form {
+        font-family: 'Mulish', sans-serif;
+        font-size: 15pt;
+        color: #b9b9b9;
+        width: 70%;
+    }
+    /* estilos parametrizado */
+    
+    .colorHelp {
+        color: #002b3d;
+    }
+    /* estilos para tabla */
+    
+    .rowTabla {
+        display: table-row;
+        text-align: justify;
+        border: solid 2px rgb(206, 205, 210);
+        background-image: radial-gradient(circle, #0e274c, #1c3468, #304185, #494ea2, #6659be);
+    }
+    
+    .tabla {
+        overflow-x: auto;
+    }
+    
+    .primera,
+    .segunda,
+    .tercera,
+    .cuarta,
+    .quinta {
+        display: table-cell;
+        padding-right: 25px;
+        border: solid 1px rgb(206, 205, 210);
+        background-image: radial-gradient(circle, #0e274c, #1c3468, #304185, #494ea2, #6659be);
+    }
+    
+    .primera p,
+    .segunda p,
+    .tercera p,
+    .cuarta p,
+    .quinta p {
+        margin: 1px 1px;
+        font-family: 'Mulish', sans-serif;
+        font-size: 20pt;
+    }
+    
+    .primera .titulo,
+    .segunda .titulo,
+    .tercera .titulo,
+    .cuarta .titulo,
+    .quinta .titulo {
+        margin: 1px 1px;
+    }

@@ -1,19 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@300&family=Russo+One&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* class girar  */
-
-.girar {
-    transition: 1s;
-    &:hover {
-        transform: scale(1.5) rotate(360deg);
-    }
-}
-
-
-/* imagen header */
+@import './variables';
+@import './header';
+@import './index';
+@import './estilosGenerales';
+@import './cabecerasPaginas';
+@import './formularios';
+@import './mediaQuery';
