@@ -221,6 +221,18 @@ h2 {
   padding: 5%; }
 
 /* estilos formularios */
+/* botones */
+.container__input {
+  background-image: linear-gradient(to right, #051937, #003347, #204c4e, #4b6257, #74786a);
+  font-size: 15pt;
+  font-weight: normal;
+  font-family: 'Mulish', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border: #bbb;
+  border-radius: 10px; }
+
 .container__form__textArea_text {
   position: relative;
   top: 3rem;
