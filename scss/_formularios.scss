@@ -3,13 +3,13 @@
     
     .container__input {
         background-image: linear-gradient(to right, #051937, #003347, #204c4e, #4b6257, #74786a);
-        font-size: 15pt;
+        font-size: $fuente-contenedor;
         font-weight: normal;
         font-family: 'Mulish', sans-serif;
-        color: white;
+        color: $color-blanco;
         text-align: center;
         padding: 1rem;
-        border: #bbb;
+        border: $color-blanco;
         border-radius: 10px;
     }
     
@@ -21,8 +21,8 @@
     
     .container__form {
         font-family: 'Mulish', sans-serif;
-        font-size: 15pt;
-        color: #b9b9b9;
+        font-size: $fuente-contenedor;
+        color: $color-blanco;
         width: 70%;
     }
     /* estilos parametrizado */
@@ -35,7 +35,7 @@
     .rowTabla {
         display: table-row;
         text-align: justify;
-        border: solid 2px rgb(206, 205, 210);
+        border: solid 2px $color-blanco;
         background-image: radial-gradient(circle, #0e274c, #1c3468, #304185, #494ea2, #6659be);
     }
     
@@ -50,7 +50,7 @@
     .quinta {
         display: table-cell;
         padding-right: 25px;
-        border: solid 1px rgb(206, 205, 210);
+        border: solid 1px $color-blanco;
         background-image: radial-gradient(circle, #0e274c, #1c3468, #304185, #494ea2, #6659be);
     }
     

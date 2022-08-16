@@ -47,7 +47,7 @@ main {
     h1 {
         font-size: 30pt;
         font-weight: bold;
-        font-family: 'Mulish', sans-serif;
+        font-family: $fuente-principal;
         color: white;
         text-align: center;
     }
@@ -62,7 +62,7 @@ main {
 .container__li {
     font-size: 15pt;
     font-weight: normal;
-    font-family: 'Mulish', sans-serif;
+    font-family: $fuente-principal;
     padding: 1%;
     margin: 1%;
     background-image: linear-gradient(to right top, #051937, #002b3d, #133a3c, #35473f, #50534b);
@@ -75,7 +75,7 @@ main {
 h1 {
     font-size: 30pt;
     font-weight: bold;
-    font-family: 'Mulish', sans-serif;
+    font-family: $fuente-principal;
     color: white;
     text-align: center;
 }
@@ -83,7 +83,7 @@ h1 {
 h2 {
     font-size: 25pt;
     font-weight: bold;
-    font-family: 'Mulish', sans-serif;
+    font-family: $fuente-principal;
     color: white;
     text-align: center;
 }
