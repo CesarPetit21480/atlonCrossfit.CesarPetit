@@ -1,10 +1,6 @@
 header {
-    background-image: url("../images/boxFotoRetocada.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-transform: uppercase;
-    text-transform: uppercase;
+    background-image: url("../images/desktop/boxFotoRetocada.jpg");
+    @include propiedadesImagenBanner;
     padding-top: 5%;
     padding-bottom: 10%;
     border: solid 3px black;
@@ -16,7 +12,7 @@ header {
 .girar {
     transition: 1s;
     &:hover {
-        transform: scale(1.5) rotate(360deg);
+        transform: scale(1.5);
     }
 }
 
@@ -35,6 +31,16 @@ header {
     border-radius: 10px;
     position: relative;
     top: 12rem;
+    #aLogo {
+        &:hover {
+            background-color: transparent;
+            border-right: none;
+            background-color: none;
+            color: transparent;
+            opacity: 2;
+            padding: none;
+        }
+    }
     a {
         color: $color-blanco;
         background-color: rgb(41, 40, 40);

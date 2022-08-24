@@ -14,22 +14,15 @@ main {
 }
 
 .contenedor {
-    background: linear-gradient(80deg, black, rgb(157, 155, 155));
-    text-shadow: none;
+    @extend main;
     ul {
-        display: flex;
-        flex-direction: row;
+        @include flex-row-center;
         justify-content: space-around;
-        justify-content: center;
-        flex-wrap: wrap;
         padding: 2%;
         overflow: auto;
         li {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+            @include flex-column-center;
             align-items: center;
-            justify-content: center;
             border-radius: 10px;
             border: solid 2px rgb(227, 227, 230);
             background-image: linear-gradient(to right top, #051937, #002b3d, #133a3c, #35473f, #50534b);
@@ -41,22 +34,35 @@ main {
     }
     p {
         text-align: center;
-        color: rgb(233, 233, 238);
+        color: $color-blanco;
         font-size: 10pt;
     }
-    h1 {
-        font-size: 30pt;
-        font-weight: bold;
-        font-family: $fuente-principal;
-        color: white;
-        text-align: center;
-    }
-    h3 {
-        font-size: 23pt;
-        padding-bottom: 1%;
-        color: white;
-        padding-left: 2%;
-    }
+}
+
+h1 {
+    font-size: map-get($tipoH1, tamfuente);
+    font-weight: map-get($tipoH1, tipo);
+    font-family: $fuente-principal;
+    color: $color-blanco;
+    text-align: map-get($tipoH1, centro);
+    padding: 1rem;
+}
+
+h2 {
+    font-size: map-get($tipoH2, tamfuente);
+    font-weight: map-get($tipoH2, tipo);
+    font-family: $fuente-principal;
+    color: $color-blanco;
+    text-align: center;
+    padding-top: map-get($tipoH2, padd);
+}
+
+h3 {
+    color: map-get($tipoH3, tipoColor);
+    font-size: map-get($tipoH3, tamfuente);
+    font-weight: map-get($tipoH3, tipo);
+    font-family: map-get($tipoH3, tipoLetra);
+    text-align: map-get($tipoH3, izquierda);
 }
 
 .container__li {
@@ -70,22 +76,6 @@ main {
         opacity: 1;
         transform: scale(1.15, 1.15);
     }
-}
-
-h1 {
-    font-size: 30pt;
-    font-weight: bold;
-    font-family: $fuente-principal;
-    color: white;
-    text-align: center;
-}
-
-h2 {
-    font-size: 25pt;
-    font-weight: bold;
-    font-family: $fuente-principal;
-    color: white;
-    text-align: center;
 }
 
 
@@ -109,4 +99,13 @@ h2 {
         box-shadow: 0px 0px 15px 15px #7b67a7;
         padding: 10px;
     }
+}
+
+.leyenda {
+    background-image: radial-gradient(circle, #070707, #242324, #3f3d3d, #5c5a58, #787875);
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    border: solid 1px $color-blanco;
 }

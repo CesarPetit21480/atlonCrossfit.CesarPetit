@@ -5,7 +5,7 @@
         background-image: linear-gradient(to right, #051937, #003347, #204c4e, #4b6257, #74786a);
         font-size: $fuente-contenedor;
         font-weight: normal;
-        font-family: 'Mulish', sans-serif;
+        font-family: $fuente-principal;
         color: $color-blanco;
         text-align: center;
         padding: 1rem;
@@ -28,7 +28,10 @@
     /* estilos parametrizado */
     
     .colorHelp {
-        color: #002b3d;
+        @extend .container__form;
+        color: $color-negro;
+        width: 70%;
+        font-weight: $tipo-negrita;
     }
     /* estilos para tabla */
     
