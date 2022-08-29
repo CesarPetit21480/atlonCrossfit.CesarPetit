@@ -81,35 +81,35 @@ header {
 
 /* main class contenedor Propio */
 main, .contenedor {
-  background: linear-gradient(80deg, black, #9d9b9b);
+  background-image: url("../images/Crossfit.jpg");
   text-shadow: none; }
 
-.contenedor ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 2%;
-  overflow: auto; }
-  .contenedor ul li {
+.contenedor {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.925) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.925) 100%); }
+  .contenedor ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
-    border-radius: 10px;
-    border: solid 2px #e3e3e6;
-    background-image: linear-gradient(to right top, #051937, #002b3d, #133a3c, #35473f, #50534b); }
-
-.contenedor img {
-  width: 15rem;
-  height: 15rem; }
-
-.contenedor p {
-  text-align: center;
-  color: white;
-  font-size: 10pt; }
+    justify-content: space-around;
+    padding: 2%;
+    overflow: auto; }
+    .contenedor ul li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      border-radius: 10px;
+      border: solid 2px #e3e3e6;
+      background-image: linear-gradient(to right top, #051937, #002b3d, #133a3c, #35473f, #50534b); }
+  .contenedor img {
+    width: 15rem;
+    height: 15rem; }
+  .contenedor p {
+    text-align: center;
+    color: white;
+    font-size: 10pt; }
 
 h1 {
   font-size: 30pt;
@@ -164,12 +164,31 @@ h3 {
   padding: 10px; }
 
 .leyenda {
-  background-image: radial-gradient(circle, #070707, #242324, #3f3d3d, #5c5a58, #787875);
+  background-image: linear-gradient(to right, #162a48, #163a58, #164a66, #1a5b73, #236c7f);
   font-size: 30pt;
   font-weight: bold;
   font-family: 'Mulish', sans-serif;
   color: white;
-  border: solid 1px white; }
+  border: solid 1px white;
+  padding-top: 3px; }
+
+.colorIconosFacebook {
+  background-color: #3b5998; }
+
+.instagramNu {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent; }
+
+.iconoInput {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300; }
 
 /* cabecera con imagenes y titulos */
 .container__cabecera {
@@ -237,7 +256,8 @@ h3 {
   font-family: "Mulish", sans-serif;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border: white;
   border-radius: 10px; }
 
@@ -255,8 +275,9 @@ h3 {
 /* estilos parametrizado */
 .colorHelp {
   color: #0e0e0e;
+  font-weight: bold;
   width: 70%;
-  font-weight: bold; }
+  font-size: medium; }
 
 /* estilos para tabla */
 .rowTabla {
@@ -350,7 +371,14 @@ h3 {
   .container__cabecera__contacto {
     background-image: url("../images/mov/contactoMov.jpg"); }
   .container__cabecera__productos {
-    background-image: url("../images/mov/productosMov.jpg"); } }
+    background-image: url("../images/mov/productosMov.jpg"); }
+  .container__input {
+    font-size: 10pt;
+    padding: 5%; }
+  .leyenda {
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold; } }
 
 /*vista tablet */
 @media only screen and (min-width: 767px) and (max-width: 1024px) {

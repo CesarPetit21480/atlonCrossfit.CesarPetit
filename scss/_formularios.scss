@@ -8,7 +8,8 @@
         font-family: $fuente-principal;
         color: $color-blanco;
         text-align: center;
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         border: $color-blanco;
         border-radius: 10px;
     }
@@ -30,8 +31,9 @@
     .colorHelp {
         @extend .container__form;
         color: $color-negro;
-        width: 70%;
         font-weight: $tipo-negrita;
+        width: 70%;
+        font-size: medium;
     }
     /* estilos para tabla */
     

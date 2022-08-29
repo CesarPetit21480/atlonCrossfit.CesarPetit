@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC " crossorigin="anonymous ">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet " href="../css/estilos.css ">
     <script src="https://kit.fontawesome.com/6e1bb179ca.js " crossorigin="anonymous "></script>
     <link rel="stylesheet " href="../css/imagen_hover/imagehover.min.css ">
@@ -23,7 +24,7 @@
                         <a id="aLogo" title="index" href="../index.html">
                             <img class="navbar-brand imgRedonda" src="../images/atlon1.jpg" alt="Logo" /></a>
                     </div>
-                    <a class="navbar-brand anclaSola" href="../index.html">index</a>
+                    <a class="navbar-brand anclaSola" href="../index.html">Principal</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -59,36 +60,36 @@
     <section class="container-fluid leyenda d-flex justify-content-center ">
         <div class="row ">
             <div class="col-lg-12 col-sm-6 col-md-12 ">
-                <p>FORMA PARTE DE NUESTRO BOX</p>
+                <p>Forma Parte de Nuestro Box</p>
             </div>
         </div>
     </section>
     <main class="container-fluid pb-2 ">
         <div class="contenedor ">
             <section class=" d-flex justify-content-center ">
-                <form class=" container__form ">
-                    <div class="mb-3 ">
-                        <label class="form-label ">Ingrese Nombre</label >
-                        <input type="text " class="form-control " aria-describedby="nombreHelp " placeholder="Nombre Atleta ">
-                        <div id="nombreHelp " class="form-text ">Cargue su Nombre Completo</div>
+                <form class="container__form ">
+                    <div class="mb-3">
+                        <label class="form-label">Ingrese Nombre</label >
+                        <input type="text" class="form-control iconoInput" aria-describedby="nombreHelp" placeholder=" Nombre Atleta" required>
+                        <div id="nombreHelp" class="form-text colorHelp">Cargue su Nombre Completo</div>
                     </div>
                     <div class="mb-3 ">
-                        <label class="form-label ">Ingrese DNI</label>
-                        <input type="text " class="form-control " aria-describedby="DniHelp ">
-                        <div id="DniHelp " class="form-text ">Cargue correctamente su dni</div>
+                        <label class="form-label">Ingrese DNI</label>
+                        <input type="text" class="form-control iconoInput" placeholder=" documento" aria-describedby="DniHelp" required>
+                        <div id="DniHelp" class="form-text colorHelp">Cargue correctamente su dni</div>
                     </div>
                     <div class="mb-3 ">
                         <label class="form-label ">Ingrese Fecha De Nacimiento</label>
-                        <input type="date " class="form-control " aria-describedby="fechaHelp ">
-                        <div id="fechaHelp " class="form-text ">Cargue correctamente su Fecha</div>
+                        <input type="date" class="form-control colorHelp" aria-describedby="fechaHelp" required>
+                        <div id="fechaHelp" class="form-text colorHelp">Cargue correctamente su Fecha</div>
                     </div>
                     <div class="mb-3 ">
                         <label class="form-label ">Ingrese Email</label>
-                        <input type="email " class="form-control " aria-describedby="emailHelp ">
-                        <div id="emailHelp " class="form-text ">Cargue correctamente su Email</div>
+                        <input type="email" class="form-control iconoInput" placeholder=" Ingrese Email" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text colorHelp">Cargue correctamente su Email</div>
                     </div>
                     <div class="d-flex mb-3 ">
-                        <button class="btn btn-primary mb-3 me-3 flex-fill container__input " type="submit " name="Alta ">Alta Atleta</button>
+                        <button class="btn btn-primary mb-3 me-3 flex-fill container__input" type="submit" name="Alta ">Alta Atleta</button>
                         <button class="btn btn-primary mb-3 flex-fill container__input " type="reset " name="nuevo ">Nueva Carga</button>
                     </div>
                 </form>
@@ -100,33 +101,29 @@
             </div>
         </section>
     </main>
-    <footer class="bg-dark text-center text-white ">
-        <div class="container p-4 pb-0 ">
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-p-4 pb-0">
             <!-- Section: Social media -->
-            <section class="mb-4 ">
+            <section class="mb-3 pt-4">
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-facebook-f "></i></a>
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-twitter "></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 colorIconosFacebook" href="https://www.facebook.com/AtlonCF" role="button" target="_blank"><i class="fab fa-facebook-f" style="color: #f8f9fa"></i></a>
                 <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-google "></i></a>
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-instagram "></i></a>
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-linkedin-in "></i></a>
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-github "></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/search?q=atlon+crossfit+pilar&rlz=1C1ALOY_esAR976AR976&sxsrf=ALiCzsaph5hf4Ai8ZHFX-2OXKaJx9O2Vvg%3A1661552401492&ei=EUcJY8HHHeba1sQPs8m_oAM&oq=altlon+pilar&gs_lcp=Cgdnd3Mtd2l6EAEYADIKCAAQHhAIEA0QCjoHCAAQRxCwAzoHCCMQsAIQJzoHCAAQsQMQDToECAAQDToKCC4QxwEQrwEQDToECAAQEzoICAAQHhANEBM6CggAEB4QDxANEBM6CggAEB4QDRAKEBM6BggAEB4QDToICAAQHhAIEA1KBAhBGABKBAhGGABQ_gpY1xJgniJoAnABeACAAZgBiAHMBZIBAzAuNpgBAKABAcgBCMABAQ&sclient=gws-wiz"
+                    role="button" target="_blank"><i class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 instagramNu" href="https://instagram.com/atlonoficial?igshid=YmMyMTA2M2Y=" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
             </section>
             <!-- Section: Social media -->
         </div>
         <!-- Grid container -->
+
         <!-- Copyright -->
-        <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © Atlon Crossfit © 2022 All Rights Reserved:
-            <a class="text-white " href="https://mdbootstrap.com/ ">CESAR PETIT</a>
+            <a class="text-white" href="#">CESAR PETIT</a>
         </div>
         <!-- Copyright -->
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 </body>
 

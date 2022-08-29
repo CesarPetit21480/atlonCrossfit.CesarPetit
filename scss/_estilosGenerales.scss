@@ -9,12 +9,14 @@
 /* main class contenedor Propio */
 
 main {
-    background: linear-gradient(80deg, black, rgb(157, 155, 155));
+    //    background-image: linear-gradient(to right, #585c62, #4e5964, #415765, #315665, #1a5463);
+    background-image: url("../images/Crossfit.jpg");
     text-shadow: none;
 }
 
 .contenedor {
     @extend main;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.925) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.925) 100%);
     ul {
         @include flex-row-center;
         justify-content: space-around;
@@ -102,10 +104,33 @@ h3 {
 }
 
 .leyenda {
-    background-image: radial-gradient(circle, #070707, #242324, #3f3d3d, #5c5a58, #787875);
+    background-image: linear-gradient(to right, #162a48, #163a58, #164a66, #1a5b73, #236c7f);
     font-size: 30pt;
-    font-weight: bold;
+    font-weight: $tipo-negrita;
     font-family: 'Mulish', sans-serif;
     color: white;
     border: solid 1px $color-blanco;
+    padding-top: 3px;
+}
+
+.colorIconosFacebook {
+    background-color: #3b5998;
+}
+
+.instagramNu {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.iconoInput {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 300;
 }

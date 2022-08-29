@@ -72,6 +72,15 @@
      .container__cabecera__productos {
          background-image: url("../images/mov/productosMov.jpg");
      }
+     .container__input {
+         font-size: $fuente-movile;
+         padding: 5%;
+     }
+     .leyenda {
+         font-size: 20pt;
+         text-align: center;
+         font-weight: $tipo-negrita;
+     }
  }
  /*vista tablet */
  

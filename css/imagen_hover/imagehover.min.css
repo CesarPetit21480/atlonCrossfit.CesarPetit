@@ -34,7 +34,7 @@
 [class*=" imghvr-"] figcaption,
 [class^=imghvr-] figcaption {
     /*background-color: #135796;*/
-    background-image: linear-gradient(to right top, #6d697d, #5f6982, #4b6a84, #326b82, #0f6c7a);
+    background-image: linear-gradient(to right top, #6d697d, #5f6982, #4b6a84, #326b82, #0f6c7a, .50);
     padding: 30px;
     position: absolute;
     top: 0;
