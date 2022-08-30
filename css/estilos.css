@@ -276,8 +276,11 @@ h3 {
 .colorHelp {
   color: white;
   font-weight: bold;
-  width: 70%;
-  font-size: medium; }
+  font-size: medium;
+  padding: 5px;
+  background-image: linear-gradient(to right top, #051937, #002b3d, #133a3c, #35473f, #50534b);
+  border-radius: 3px;
+  text-align: center; }
 
 /* estilos para tabla */
 .rowTabla {
