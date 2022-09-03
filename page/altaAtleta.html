@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="Atlon crossfit es un box ubicado donde se puede realizar distintos tipos de actividades se encuentra en la localidad de pilar">
+    <meta name="description" content="Pagina que permite generar el alta del atletas">
+    <meta name="keywords" content="link, imagenes, formularios, validaciones" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC " crossorigin="anonymous ">
@@ -70,23 +71,20 @@
                 <form class="container__form ">
                     <div class="mb-3">
                         <label class="form-label">Ingrese Nombre</label >
-                        <input type="text" class="form-control iconoInput" aria-describedby="nombreHelp" placeholder=" Nombre Atleta" required>
-                        <div id="nombreHelp" class="form-text colorHelp">Cargue su Nombre Completo</div>
+                        <input type="text" class="form-control iconoInput" placeholder=" Nombre Atleta" required>
+                       
                     </div>
                     <div class="mb-3 ">
                         <label class="form-label">Ingrese DNI</label>
-                        <input type="text" class="form-control iconoInput" placeholder=" documento" aria-describedby="DniHelp" required>
-                        <div id="DniHelp" class="form-text colorHelp">Cargue correctamente su dni</div>
+                        <input type="text" class="form-control iconoInput" placeholder=" documento" required>
                     </div>
                     <div class="mb-3 ">
                         <label class="form-label ">Ingrese Fecha De Nacimiento</label>
-                        <input type="date" class="form-control colorHelp" aria-describedby="fechaHelp" required>
-                        <div id="fechaHelp" class="form-text colorHelp">Cargue correctamente su Fecha</div>
+                        <input type="date" class="form-control" required>
                     </div>
                     <div class="mb-3 ">
                         <label class="form-label ">Ingrese Email</label>
-                        <input type="email" class="form-control iconoInput" placeholder=" Ingrese Email" aria-describedby="emailHelp" required>
-                        <div id="emailHelp" class="form-text colorHelp">Cargue correctamente su Email</div>
+                        <input type="email" class="form-control iconoInput" placeholder=" Ingrese Email" required>
                     </div>
                     <div class="d-flex mb-3 ">
                         <button class="btn btn-primary mb-3 me-3 flex-fill container__input" type="submit" name="Alta ">Alta Atleta</button>

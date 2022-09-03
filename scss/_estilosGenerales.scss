@@ -131,6 +131,14 @@ h3 {
 }
 
 .iconoInput {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 300;
+    text-transform: lowercase;
+    font-family: "Font awesome 5 free";
+    font-weight: 200;
+    font-size: small;
+}
+
+::placeholder {
+    font-family: "Font awesome 5 free";
+    font-weight: 200;
+    font-size: small;
 }

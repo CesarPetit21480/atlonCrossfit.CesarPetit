@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="Atlon crossfit es un box ubicado donde se puede realizar distintos tipos de actividades se encuentra en la localidad de pilar">
+    <meta name="description" content="pagina que permite al atleta darse de alta para su categoria">
+    <meta name="keywords" content="link, imagenes, botones, validaciones, selectores" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -68,19 +69,20 @@
         <div class="contenedor p-4">
             <section class="contenedor d-flex justify-content-center">
                 <form class=" container__form">
-                    <div class="mb-3 ">
+                    <div class="mb-3">
                         <label class="form-label ">Ingrese DNI</label >
-                        <input type="text " class="form-control iconoInput" aria-describedby="DniHelp " placeholder=" documento" required >
-                        <div id="DniHelp " class="form-text colorHelp">Cargue correctemente su DNI</div>
+                        <input type="text " class="form-control" placeholder=" documento" required >
+                        
                     </div>
                     <div class="mb-3 ">
                         <label class="form-label ">Ingrese Fecha Clase</label>
-                        <input type="date" class="form-control" aria-describedby="fechaHelp" required>
-                        <div id="fechaHelp" class="form-text colorHelp">Cargue Fecha de la clase deseada</div>
+                        <input type="date" class="form-control" required>
+
                     </div>
                     <div class="mb-3 ">
-                        <select class="form-select form-select-lg mb-3 iconoInput" aria-label=".form-select-lg " aria-describedby="horaHelp" required>
-                            <option selected>  Seleccione Hora</option>
+                        <label class="form-label ">Ingrese hora Clase</label>
+                        <select class="form-select form-select-lg mb-3 iconoInput" aria-label=".form-select-lg " required>
+                            <option selected> Seleccione Hora</option>
                             <option value="09:00 ">09:00</option>
                             <option value="10:00 " >10:00</option>
                             <option value="11:00 ">11:00</option>
@@ -91,16 +93,17 @@
                             <option value="16:00 ">16:00</option>
                             <option value="17:00 ">17:00</option> 
                         </select>
-                        <div id="horaHelp" class="form-text colorHelp">Elegir hora de la clase</div>
+
                     </div>
                     <div class="mb-3">
-                        <select class="form-select form-select-lg mb-3 iconoInput" aria-label=".form-select-lg " aria-describedby="horaHelp" required>
-                            <option selected>  Seleccione Categoria</option>
+                        <label class="form-label ">Ingrese Categoria Clase</label>
+                        <select class="form-select form-select-lg mb-3 iconoInput" aria-label=".form-select-lg" required>
+                            <option selected>  Seleccione Categoria</option>
                             <option value="scaled " >scaled</option>
                             <option value="Avanzado " >Avanzado</option>
                             <option value="Libre ">Libre</option>> 
                         </select>
-                        <div id="CategoriaHelp" class="form-text colorHelp">Elegir Su categoria</div>
+
                     </div>
                     <div class="d-flex mb-3">
                         <button class="btn btn-primary mb-3 me-3 flex-fill container__input" type="submit" name="Alta">Alta Clase</button>

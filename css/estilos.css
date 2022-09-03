@@ -187,8 +187,15 @@ h3 {
   -webkit-text-fill-color: transparent; }
 
 .iconoInput {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300; }
+  text-transform: lowercase;
+  font-family: "Font awesome 5 free";
+  font-weight: 200;
+  font-size: small; }
+
+::placeholder {
+  font-family: "Font awesome 5 free";
+  font-weight: 200;
+  font-size: small; }
 
 /* cabecera con imagenes y titulos */
 .container__cabecera {
@@ -340,8 +347,6 @@ h3 {
     font-weight: normal;
     position: relative;
     top: 8rem; }
-  .leyenda {
-    font-size: 20pt; }
   .contenedor h3 {
     font-size: 15pt;
     padding-bottom: 1%;
@@ -376,7 +381,7 @@ h3 {
     font-size: 10pt;
     padding: 5%; }
   .leyenda {
-    font-size: 20pt;
+    font-size: 15pt;
     text-align: center;
     font-weight: bold; } }
 
@@ -395,7 +400,9 @@ h3 {
     width: 300px;
     height: 300px; }
   .leyenda {
-    font-size: 20pt; }
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold; }
   /*  seccion presentacion */
   .headerMain p {
     font-size: 18pt;
