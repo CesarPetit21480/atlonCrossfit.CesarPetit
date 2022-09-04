@@ -197,6 +197,9 @@ h3 {
   font-weight: 200;
   font-size: small; }
 
+.direccion {
+  text-align: center; }
+
 /* cabecera con imagenes y titulos */
 .container__cabecera {
   border: solid 2px #3179aa;
@@ -383,7 +386,11 @@ h3 {
   .leyenda {
     font-size: 15pt;
     text-align: center;
-    font-weight: bold; } }
+    font-weight: bold; }
+  .iconoInput {
+    font-size: x-small; }
+  ::placeholder {
+    font-size: x-small; } }
 
 /*vista tablet */
 @media only screen and (min-width: 767px) and (max-width: 1024px) {

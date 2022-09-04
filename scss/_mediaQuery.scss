@@ -78,6 +78,12 @@
          text-align: center;
          font-weight: $tipo-negrita;
      }
+     .iconoInput {
+         font-size: x-small;
+     }
+      ::placeholder {
+         font-size: x-small;
+     }
  }
  /*vista tablet */
  
